@@ -25,8 +25,8 @@
         $total = mysqli_num_rows($dados);
         if($total > 0) {
             do {
-                $str .= "<p>Código do professor: " . $linha['codProf'] . "</p>"; 
-                $str .= "<p>Nome do professor: " . $linha['nomeProf'] . "</p>";
+                $str .= "<p>Código do(a) professor(a): " . $linha['codProf'] . "</p>"; 
+                $str .= "<p>Nome do(a) professor(a): " . $linha['nomeProf'] . "</p>";
                 $str .= "<fieldset>
                             <table>
                                 <tr>
