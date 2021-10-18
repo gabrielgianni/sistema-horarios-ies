@@ -4,17 +4,17 @@
 
     if(!empty($_POST["codProf"]) && !empty($_POST["nomeProf"]) && is_numeric($_POST["codProf"])) {
         $codProf = $_POST["codProf"];
-        $nomeProf = $_POST["nomeProf"];
-        $segM = $_POST["segM"];
-        $segN = $_POST["segN"];
-        $terM = $_POST["terM"];
-        $terN = $_POST["terN"];
-        $quaM = $_POST["quaM"];
-        $quaN = $_POST["quaN"];
-        $quiM = $_POST["quiM"];
-        $quiN = $_POST["quiN"];
-        $sexM = $_POST["sexM"];
-        $sexN = $_POST["sexN"];
+        $nomeProf = trim($_POST["nomeProf"]);
+        $segM = trim($_POST["segM"]);
+        $segN = trim($_POST["segN"]);
+        $terM = trim($_POST["terM"]);
+        $terN = trim($_POST["terN"]);
+        $quaM = trim($_POST["quaM"]);
+        $quaN = trim($_POST["quaN"]);
+        $quiM = trim($_POST["quiM"]);
+        $quiN = trim($_POST["quiN"]);
+        $sexM = trim($_POST["sexM"]);
+        $sexN = trim($_POST["sexN"]);
 
         $sql = "INSERT INTO horarios(codProf, nomeProf, segM, segN, terM, terN, quaM, quaN, quiM, quiN, sexM, sexN) VALUES ('$codProf', '$nomeProf', '$segM', '$segN', '$terM', '$terN', '$quaM', '$quaN', '$quiM', '$quiN', '$sexM', '$sexN')";
 
