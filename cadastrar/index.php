@@ -27,7 +27,9 @@
             <table>
                 <tr>
                     <th></th>
+                    <th>Nome da disciplina</th>
                     <th>Matutino</th>
+                    <th>Nome da disciplina</th>
                     <th>Noturno</th>
                 </tr>
                 <tr>
@@ -35,10 +37,16 @@
                         <label for="segM">Segunda-feira</label>
                     </td>
                     <td>
-                        <input type="text" id="segM" name="segM">
+                        <input type="text" id="discSegM" name="discSegM" placeholder="Iniciais da disciplina">
                     </td>
                     <td>
-                        <input type="text" id="segN" name="segN">
+                        <input type="text" id="segM" name="segM" placeholder="Turmas, curso e campus">
+                    </td>
+                    <td>
+                        <input type="text" id="discSegN" name="discSegN" placeholder="Iniciais da disciplina">
+                    </td>
+                    <td>
+                        <input type="text" id="segN" name="segN" placeholder="Turmas, curso e campus">
                     </td>
                 </tr>
                 <tr>
@@ -46,10 +54,16 @@
                         <label for="terM">Terça-feira</label>
                     </td>
                     <td>
-                        <input type="text" id="terM" name="terM">
+                        <input type="text" id="discTerM" name="discTerM" placeholder="Iniciais da disciplina">
                     </td>
                     <td>
-                        <input type="text" id="terN" name="terN">
+                        <input type="text" id="terM" name="terM" placeholder="Turmas, curso e campus">
+                    </td>
+                    <td>
+                        <input type="text" id="discTerN" name="discTerN" placeholder="Iniciais da disciplina">
+                    </td>
+                    <td>
+                        <input type="text" id="terN" name="terN" placeholder="Turmas, curso e campus">
                     </td>
                 </tr>
                 <tr>
@@ -57,10 +71,16 @@
                         <label for="quaM">Quarta-feira</label>
                     </td>
                     <td>
-                        <input type="text" id="quaM" name="quaM">
+                        <input type="text" id="discQuaM" name="discQuaM" placeholder="Iniciais da disciplina">
                     </td>
                     <td>
-                        <input type="text" id="quaN" name="quaN">
+                        <input type="text" id="quaM" name="quaM" placeholder="Turmas, curso e campus">
+                    </td>
+                    <td>
+                        <input type="text" id="discQuaN" name="discQuaN" placeholder="Iniciais da disciplina">
+                    </td>
+                    <td>
+                        <input type="text" id="quaN" name="quaN" placeholder="Turmas, curso e campus">
                     </td>
                 </tr>
                 <tr>
@@ -68,10 +88,16 @@
                         <label for="quiM">Quinta-feira</label>
                     </td>
                     <td>
-                        <input type="text" id="quiM" name="quiM">
+                        <input type="text" id="discQuiM" name="discQuiM" placeholder="Iniciais da disciplina">
                     </td>
                     <td>
-                        <input type="text" id="quiN" name="quiN">
+                        <input type="text" id="quiM" name="quiM" placeholder="Turmas, curso e campus">
+                    </td>
+                    <td>
+                        <input type="text" id="discQuiN" name="discQuiN" placeholder="Iniciais da disciplina">
+                    </td>
+                    <td>
+                        <input type="text" id="quiN" name="quiN" placeholder="Turmas, curso e campus">
                     </td>
                 </tr>
                 <tr>
@@ -79,10 +105,16 @@
                         <label for="sexM">Sexta-feira</label>
                     </td>
                     <td>
-                        <input type="text" id="sexM" name="sexM">
+                        <input type="text" id="discSexM" name="discSexM" placeholder="Iniciais da disciplina">
                     </td>
                     <td>
-                        <input type="text" id="sexN" name="sexN">
+                        <input type="text" id="sexM" name="sexM" placeholder="Turmas, curso e campus">
+                    </td>
+                    <td>
+                        <input type="text" id="discSexN" name="discSexN" placeholder="Iniciais da disciplina">
+                    </td>
+                    <td>
+                        <input type="text" id="sexN" name="sexN" placeholder="Turmas, curso e campus">
                     </td>
                 </tr>
             </table>
