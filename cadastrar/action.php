@@ -2,6 +2,8 @@
     session_start();
     include_once "../connection.php";
 
+    mysqli_set_charset($conn, "utf8");
+
     if(!empty($_POST["codProf"]) && !empty($_POST["nomeProf"]) && is_numeric($_POST["codProf"])) {
         $codProf = $_POST["codProf"];
         $nomeProf = trim($_POST["nomeProf"]);
