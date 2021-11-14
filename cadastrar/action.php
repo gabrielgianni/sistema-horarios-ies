@@ -7,25 +7,25 @@ mysqli_set_charset($conn, "utf8");
 if (!empty($_POST["codProf"]) && !empty($_POST["nomeProf"]) && is_numeric($_POST["codProf"])) {
     $codProf = $_POST["codProf"];
     $nomeProf = trim($_POST["nomeProf"]);
-    $discSegM = mb_strtoupper(trim($_POST["discSegM"]), "UTF-8");
+    $discSegM = trim($_POST["discSegM"]);
     $segM = trim($_POST["segM"]);
-    $discSegN = mb_strtoupper(trim($_POST["discSegN"]), "UTF-8");
+    $discSegN = trim($_POST["discSegN"]);
     $segN = trim($_POST["segN"]);
-    $discTerM = mb_strtoupper(trim($_POST["discTerM"]), "UTF-8");
+    $discTerM = trim($_POST["discTerM"]);
     $terM = trim($_POST["terM"]);
-    $discTerN = mb_strtoupper(trim($_POST["discTerN"]), "UTF-8");
+    $discTerN = trim($_POST["discTerN"]);
     $terN = trim($_POST["terN"]);
-    $discQuaM = mb_strtoupper(trim($_POST["discQuaM"]), "UTF-8");
+    $discQuaM = trim($_POST["discQuaM"]);
     $quaM = trim($_POST["quaM"]);
-    $discQuaN = mb_strtoupper(trim($_POST["discQuaN"]), "UTF-8");
+    $discQuaN = trim($_POST["discQuaN"]);
     $quaN = trim($_POST["quaN"]);
-    $discQuiM = mb_strtoupper(trim($_POST["discQuiM"]), "UTF-8");
+    $discQuiM = trim($_POST["discQuiM"]);
     $quiM = trim($_POST["quiM"]);
-    $discQuiN = mb_strtoupper(trim($_POST["discQuiN"]), "UTF-8");
+    $discQuiN = trim($_POST["discQuiN"]);
     $quiN = trim($_POST["quiN"]);
-    $discSexM = mb_strtoupper(trim($_POST["discSexM"]), "UTF-8");
+    $discSexM = trim($_POST["discSexM"]);
     $sexM = trim($_POST["sexM"]);
-    $discSexN = mb_strtoupper(trim($_POST["discSexN"]), "UTF-8");
+    $discSexN = trim($_POST["discSexN"]);
     $sexN = trim($_POST["sexN"]);
 
     // Conta quantas linhas contém com o codProf passado.
