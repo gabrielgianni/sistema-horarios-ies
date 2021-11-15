@@ -9,7 +9,7 @@
 <body>
     <h2>Horário de Disciplinas</h2>
 
-    <form action="pesquisar.php" method="post">
+    <form action="pesquisar.php" method="GET">
         <label for="disciplina">Digite uma disciplina:</label>
         <input type="text" name="disciplina" id="disciplina"><br>
         <button type="submit">Pesquisar</button>

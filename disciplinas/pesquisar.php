@@ -1,7 +1,7 @@
 <?php
     include_once "../connection.php";
 
-    $disciplina = mb_strtoupper(trim($_POST['disciplina']), "UTF-8");
+    $disciplina = mb_strtoupper(trim($_GET['disciplina']), "UTF-8");
 
     $result_disciplinas = "SELECT * FROM horarios WHERE CONCAT(discSegM, discSegN, discTerM, discTerN, discQuaM, discQuaN, discQuiM, discQuiN, discSexM, discSexN) LIKE '%$disciplina%'";
 
