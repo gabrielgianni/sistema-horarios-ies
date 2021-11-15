@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horário de Professores</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 </head>
-
 <?php
     include_once '../connection.php';
 
@@ -25,10 +28,10 @@
         $total = mysqli_num_rows($dados);
         if($total > 0) {
             do {
-                $str .= "<p>Código do(a) professor(a): " . $linha['codProf'] . "</p>"; 
-                $str .= "<p>Nome do(a) professor(a): " . $linha['nomeProf'] . "</p>";
+                $str .= "<p class='fw-bold'>Código do(a) professor(a): " . $linha['codProf'] . "</p>"; 
+                $str .= "<p class='fw-bold'>Nome do(a) professor(a): " . $linha['nomeProf'] . "</p>";
                 $str .= "<fieldset>
-                            <table>
+                            <table class='table table-striped table-hover table-bordered'>
                                 <tr>
                                     <th></th>
                                     <th>Nome da disciplina</th>
@@ -41,16 +44,16 @@
                                         <label>Segunda-feira</label>
                                     </td>
                                     <td>
-                                        <input type='text' id='discSegM' name='discSegM' value='". $linha['discSegM'] . "' readonly>
+                                        {$linha['discSegM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='segM' name='segM' value='". $linha['segM'] . "' readonly>
+                                        {$linha['segM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='discSegN' name='discSegN' value='". $linha['discSegN'] . "' readonly>
+                                        {$linha['discSegN']}
                                     </td>
                                     <td>
-                                        <input type='text' id='segN' name='segN' value='" . $linha['segN'] . "' readonly>
+                                        {$linha['segN']}
                                     </td>
                                 </tr>
                                 <tr>
@@ -58,16 +61,16 @@
                                         <label>Terça-feira</label>
                                     </td>
                                     <td>
-                                        <input type='text' id='discTerM' name='discTerM' value='". $linha['discTerM'] . "' readonly>
+                                        {$linha['discTerM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='terM' name='terM' value='" . $linha['terM'] . "' readonly>
+                                        {$linha['terM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='discTerN' name='discTerN' value='". $linha['discTerN'] . "' readonly>
+                                        {$linha['discTerN']}
                                     </td>
                                     <td>
-                                        <input type='text' id='terN' name='terN' value='" . $linha['terN'] . "' readonly>
+                                        {$linha['terN']}
                                     </td>
                                 </tr>
                                 <tr>
@@ -75,16 +78,16 @@
                                         <label>Quarta-feira</label>
                                     </td>
                                     <td>
-                                        <input type='text' id='discQuaM' name='discQuaM' value='". $linha['discQuaM'] . "' readonly>
+                                        {$linha['discQuaM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='quaM' name='quaM' value='" . $linha['quaM'] . "' readonly>
+                                        {$linha['quaM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='discQuaN' name='discQuaN' value='". $linha['discQuaN'] . "' readonly>
+                                        {$linha['discQuaN']}
                                     </td>
                                     <td>
-                                        <input type='text' id='quaN' name='quaN' value='" . $linha['quaN'] . "' readonly>
+                                        {$linha['quaN']}
                                     </td>
                                 </tr>
                                 <tr>
@@ -92,16 +95,16 @@
                                         <label>Quinta-feira</label>
                                     </td>
                                     <td>
-                                        <input type='text' id='discQuiM' name='discQuiM' value='". $linha['discQuiM'] . "' readonly>
+                                        {$linha['discQuiM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='quiM' name='quiM' value='" . $linha['quiM'] . "' readonly>
+                                        {$linha['quiM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='discQuiN' name='discQuiN' value='". $linha['discQuiN'] . "' readonly>
+                                        {$linha['discQuiN']}
                                     </td>
                                     <td>
-                                        <input type='text' id='quiN' name='quiN' value='" . $linha['quiN'] . "' readonly>
+                                        {$linha['quiN']}
                                     </td>
                                 </tr>
                                 <tr>
@@ -109,32 +112,37 @@
                                         <label>Sexta-feira</label>
                                     </td>
                                     <td>
-                                        <input type='text' id='discSexM' name='discSexM' value='". $linha['discSexM'] . "' readonly>
+                                        {$linha['discSexM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='sexM' name='sexM' value='" . $linha['sexM'] . "' readonly>
+                                        {$linha['sexM']}
                                     </td>
                                     <td>
-                                        <input type='text' id='discSexN' name='discSexN' value='". $linha['discSexN'] . "' readonly>
+                                        {$linha['discSexN']}
                                     </td>
                                     <td>
-                                        <input type='text' id='sexN' name='sexN' value='" . $linha['sexN'] . "' readonly>
+                                        {$linha['sexN']}
                                     </td>
                                 </tr>
                             </table>
-                        </fieldset><br>";
+                        </fieldset><br>
+                        <hr>
+                        <br>";
             } while($linha = mysqli_fetch_assoc($dados));
         }
         mysqli_free_result($dados);
  }
 ?>
-
 <body>
-    <h2>Lista de Horário de Professores</h2>
-    <p>
-    <?php
-        echo $resultado . $str;
-    ?>
-
+    <?php require_once '../assets/partials/header.php'; ?>
+    <section class="text-center title">
+        <h1>Lista de Horário de Professores</h1>
+    </section>
+    <main class="container mt-5">
+        <?php
+            echo $resultado . $str;
+        ?>
+    </main>
+    <?php require_once '../assets/partials/footer.php'; ?>
 </body>
 </html>
