@@ -1,0 +1,198 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Header */
+header {
+    background-color: #5AB7D4;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 200% !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.btn-nav {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+}
+
+/* Section */
+section {
+    background-image: url(../img/Rectangle.png);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 30px 12%;
+    height: 500px;
+    border-top: 1px solid #487E91;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.teacher {
+    width: 220px;
+}
+
+.item-cont {
+    width: 60%;
+}
+
+.btn-item-cont {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 15px 20px;
+}
+
+.btn-item-cont:hover, .btn-nav:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.p-cont {
+    color: white;
+    font-size: 190%;
+    text-align: justify;
+}
+/* End Section */
+
+/* Main */
+.btn-middle {
+    background-color: #5AB7D4;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    margin-bottom: 50px;
+    padding: 19px;
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+.btn-middle:hover {
+    color:black;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+/* End Main */
+
+/* Footer */
+footer {
+    background-color: #487E91;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.linkFooter {
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.linkFooter:hover {
+    color: rgb(221, 221, 221);
+}
+
+.btn_dev a {
+    width: 30%;
+    padding: 2px 15px;
+    border-radius: 50px;
+    background-color: #C2F9FF;
+    color: black;
+    transition: all .2s ease-in-out;
+}
+
+.btn_dev > a:hover {
+    color:rgb(56, 56, 56);
+}
+/* End Footer */
+
+@media screen and (max-width: 840px){
+    section {
+        height: 520px;
+    }
+
+    .p-cont {
+        color: white;
+        font-size: 140%;
+        text-align: justify;
+    }
+
+    .teacher {
+        width: 200px;
+    }
+
+    .btn-item-cont {
+        border-radius: 40px;
+        padding: 5px 10px;
+    }
+
+    .btn-middle {
+        padding: 15px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .btn-item-cont {
+        border-radius: 40px;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .btn-item-cont {
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 2px 2px;
+    }
+
+    .p-cont {
+        color: white;
+        font-size: 120%;
+        text-align: justify;
+    }
+
+    .teacher {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .btn-item-cont {
+        font-size: 14px;
+        border-radius: 0px;
+        padding: 1px 1px;
+    }
+
+    .p-cont {
+        color: white;
+        font-size: 95%;
+        text-align: justify;
+    }
+
+    .teacher {
+        width: 100px;
+    }
+
+    .btn-middle {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
