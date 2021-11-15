@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horário de Disciplinas</title>
+    <title>Dados do Desenvolvedor - UniTime</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/teacher.png">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <!-- Bootstrap CSS -->
@@ -14,14 +14,14 @@
 <body>
     <?php require_once '../assets/partials/header.php'; ?>
     <section class="text-center title">
-        <h1>Horário de Disciplinas</h1>
+        <h1>Dados do Desenvolvedor</h1>
     </section>
-    <main class="container mt-5 mb-5 text-center">
-        <form action="pesquisar.php" method="get">
-            <label for="disciplina">Digite uma disciplina:</label>
-            <input type="text" name="disciplina" id="disciplina" autocomplete="off"><br>
-            <button type="submit" class="btn-search mt-4" >Pesquisar</button>
-        </form>
+    <main class="info-dev">
+        <p class="fs-2">Gabriel Gianni Souza Oliveira - 2088708-6</p>
+        <p class="fs-2">Universidade Cruzeiro do Sul - campus Paulista</p>
+        <br><br>
+        <p class="fs-2">Projeto para a disciplina: Estágio Supervisionado</p>
+        <p class="fs-2">Ministrado pelo Prof. Manuel Fernández Paradela Ledón</p>
     </main>
     <?php require_once '../assets/partials/footer.php'; ?>
 </body>
