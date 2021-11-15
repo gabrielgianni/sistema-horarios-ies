@@ -42,15 +42,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label>Segunda-feira</label>
+                                        <label class='fw-bold'>Segunda-feira</label>
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discSegM']}
                                     </td>
                                     <td>
                                         {$linha['segM']}
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discSegN']}
                                     </td>
                                     <td>
@@ -59,15 +59,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label>Terça-feira</label>
+                                        <label class='fw-bold'>Terça-feira</label>
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discTerM']}
                                     </td>
                                     <td>
                                         {$linha['terM']}
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discTerN']}
                                     </td>
                                     <td>
@@ -76,15 +76,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label>Quarta-feira</label>
+                                        <label class='fw-bold'>Quarta-feira</label>
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discQuaM']}
                                     </td>
                                     <td>
                                         {$linha['quaM']}
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discQuaN']}
                                     </td>
                                     <td>
@@ -93,15 +93,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label>Quinta-feira</label>
+                                        <label class='fw-bold'>Quinta-feira</label>
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discQuiM']}
                                     </td>
                                     <td>
                                         {$linha['quiM']}
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discQuiN']}
                                     </td>
                                     <td>
@@ -110,15 +110,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label>Sexta-feira</label>
+                                        <label class='fw-bold'>Sexta-feira</label>
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discSexM']}
                                     </td>
                                     <td>
                                         {$linha['sexM']}
                                     </td>
-                                    <td>
+                                    <td class='fw-bold'>
                                         {$linha['discSexN']}
                                     </td>
                                     <td>

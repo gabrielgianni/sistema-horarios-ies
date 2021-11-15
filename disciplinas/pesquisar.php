@@ -30,16 +30,16 @@
         echo "<p class='fw-bold'>Ofertas da disciplina: " . $disciplina . "</p>";
         if ($numRegistros != 0) {
             while ($linha = mysqli_fetch_array($result)) {
-                echo "<p>Segunda, manhã, " . $linha['discSegM'] . " " . $linha['segM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Segunda, noite, " . $linha['discSegN'] . " " . $linha['segN'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Terça, manhã, " . $linha['discTerM'] . " " . $linha['terM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Terça, noite, " . $linha['discTerN'] . " " . $linha['terN'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Quarta, manhã, " . $linha['discQuaM'] . " " . $linha['quaM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Quarta, noite, " . $linha['discQuaN'] . " " . $linha['quaN'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Quinta, manhã, " . $linha['discQuiM'] . " " . $linha['quiM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Quarta, noite, " . $linha['discQuiN'] . " " . $linha['quiN'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Sexta, manhã, " . $linha['discSexM'] . " " . $linha['sexM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
-                echo "<p>Sexta, noite, " . $linha['discSexN'] . " " . $linha['sexN'] . ", prof.: " . $linha['nomeProf'] . "</p><br>";
+                echo "<p>Segunda-feira, matutino, " . $linha['discSegM'] . " " . $linha['segM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Segunda-feira, noturno, " . $linha['discSegN'] . " " . $linha['segN'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Terça-feira, matutino, " . $linha['discTerM'] . " " . $linha['terM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Terça-feira, noturno, " . $linha['discTerN'] . " " . $linha['terN'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Quarta-feira, matutino, " . $linha['discQuaM'] . " " . $linha['quaM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Quarta-feira, noturno, " . $linha['discQuaN'] . " " . $linha['quaN'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Quinta-feira, matutino, " . $linha['discQuiM'] . " " . $linha['quiM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Quarta-feira, noturno, " . $linha['discQuiN'] . " " . $linha['quiN'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Sexta-feira, matutino, " . $linha['discSexM'] . " " . $linha['sexM'] . ", prof.: " . $linha['nomeProf'] . "</p>";
+                echo "<p>Sexta-feira, noturno, " . $linha['discSexN'] . " " . $linha['sexN'] . ", prof.: " . $linha['nomeProf'] . "</p><br>";
             }
         } else {
             echo "<p>Nenhuma disciplina foi encontrada com a palavra " . $disciplina . "</p><br>";
