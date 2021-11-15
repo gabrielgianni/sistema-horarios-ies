@@ -42,7 +42,7 @@
                 echo "<p>Sexta, noite, " . $linha['discSexN'] . " " . $linha['sexN'] . ", prof.: " . $linha['nomeProf'] . "</p><br>";
             }
         } else {
-            echo "Nenhuma disciplina foi encontrada com a palavra " . $disciplina . "";
+            echo "<p>Nenhuma disciplina foi encontrada com a palavra " . $disciplina . "</p><br>";
         }
         ?>
     </main>
