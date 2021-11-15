@@ -186,6 +186,21 @@ footer {
 }
 /* End Disciplinas */
 
+/* Cadastrar */
+.btn-register {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 5px 90px;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.required {
+    color: red;
+}
+/* Fim Cadastrar */
+
 /* Responsive */
 @media screen and (max-width: 750px){
     .btn-item-cont {

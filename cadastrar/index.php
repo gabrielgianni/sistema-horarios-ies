@@ -3,28 +3,30 @@
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Horário de Professores</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 </head>
-
 <body>
-    <h1>Cadastrar Horário de Professores</h1>
-
-    <form action="action.php" method="post">
-        <label for="codProf">Código do(a) professor(a): <span class="required">*</span></label>
-        <br>
-        <input type="text" id="codProf" name="codProf" placeholder="Digite o código de professor" required autofocus>
-        <br>
-        <label for="nomeProf">Nome do(a) professor(a): <span class="required">*</span></label>
-        <br>
-        <input type="text" id="nomeProf" name="nomeProf" placeholder="Nome do(a) professor(a)" required>
-        <br>
-        <fieldset>
-            <table>
+    <?php require_once '../assets/partials/header.php'; ?>
+    <section class="text-center title">
+        <h1>Cadastrar Horário de Professores</h1>
+    </section>
+    <main class="container mt-5">
+        <form action="action.php" method="post">
+            <label for="codProf"><span class="required">*</span> Código do(a) professor(a):</label>
+            <input type="text" id="codProf" name="codProf" placeholder="Digite o código de professor" required autofocus>
+            <br><br>
+            <label for="nomeProf"><span class="required">*</span> Nome do(a) professor(a):</label>
+            <input type="text" id="nomeProf" name="nomeProf" placeholder="Nome do(a) professor(a)" required>
+            <br><br>
+            <table class="table table-striped table-bordered">
                 <tr>
                     <th></th>
                     <th>Nome da disciplina</th>
@@ -118,18 +120,19 @@
                     </td>
                 </tr>
             </table>
-            <br>
             <?php
                 if(isset($_SESSION['msg'])) {
                     echo $_SESSION['msg'];
                     unset($_SESSION['msg']);
                 }
             ?>
-        </fieldset>
-        <br>
-        <button type="submit">Cadastrar</button>
-    </form>
-    
+            <br><br>
+            <div class="text-center mb-5">
+                <button type="submit" class="btn-register">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+    <?php require_once '../assets/partials/footer.php'; ?>
 </body>
 
 </html>
