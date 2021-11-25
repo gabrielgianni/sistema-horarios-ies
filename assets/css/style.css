@@ -238,7 +238,6 @@ footer {
 
     .btn-item-cont {
         font-size: 14px;
-        border-radius: 0px;
         padding: 1px 1px;
     }
 
@@ -265,7 +264,6 @@ footer {
 
     .btn-item-cont {
         font-size: 14px;
-        border-radius: 0px;
         padding: 1px 1px;
     }
 }
@@ -278,12 +276,6 @@ footer {
     .p-cont {
         font-size: 90%;
         text-align: left;
-    }
-
-    .btn-item-cont {
-        font-size: 15px;
-        border-radius: 0px;
-        padding: 1px 1px;
     }
 }
 /* End Responsive */
